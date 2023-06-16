@@ -2,7 +2,7 @@
 version: 2
 
 models:
-  - name: tb_discount
+  - name: tb_discounts
     description: "Max values allowed for discounts"
     columns:
       - name: id
