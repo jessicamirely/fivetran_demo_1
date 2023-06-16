@@ -1,0 +1,5 @@
+select
+    _ROW as id,
+    order_value as vl_order,
+    discount as vl_discount
+from {{ source('google_sheets', 'DISCOUNTS') }}
