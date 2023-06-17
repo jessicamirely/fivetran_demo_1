@@ -2,5 +2,5 @@
 -- Therefore return records where this isn't true to make the test fail.
 select
   *
-from {{ ref('tb_discounts') }}
+from {{ ref('trusted_discounts') }}
 where not(vl_order >= 0)
