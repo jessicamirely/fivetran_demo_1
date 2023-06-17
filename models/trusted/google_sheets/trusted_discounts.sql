@@ -1,5 +1,4 @@
-{{ config(schema='trusted') }}
-{{ config(materialized='table') }}
+{{ config(schema='trusted', materialized='table') }}
 
 select
     _ROW as id,
