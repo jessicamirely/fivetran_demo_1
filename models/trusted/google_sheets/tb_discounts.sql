@@ -1,5 +1,5 @@
 select
     _ROW as id,
     order_value as vl_order,
-    discount as vl_discount
+    cast(discount as decimal(1,2)) as vl_discount
 from {{ source('google_sheets', 'googlesheets_discounts') }}
