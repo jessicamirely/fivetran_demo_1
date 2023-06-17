@@ -1,3 +1,5 @@
+{{ config(schema='trusted') }}
+
 select
     _ROW as id,
     order_value as vl_order,
