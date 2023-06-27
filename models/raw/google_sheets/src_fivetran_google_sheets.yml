@@ -2,10 +2,10 @@ version: 2
 
 sources:
   - name: google_sheets
-    database: datalake
-    schema: raw
+    database: raw_fivetran
+    schema: google_sheets
     tables:
-      - name: googlesheets_discounts
+      - name: discounts
         description: Staged discounts data from our google sheets.
         columns:
           - name: order_value
