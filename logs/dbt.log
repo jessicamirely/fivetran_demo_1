@@ -38,3 +38,15 @@ Happy modeling!
 [0m20:28:34.386201 [debug] [MainThread]: Command `dbt deps` succeeded at 20:28:34.386132 after 0.04 seconds
 [0m20:28:34.386366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x102a91d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103f3f8b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fa1070>]}
 [0m20:28:34.386522 [debug] [MainThread]: Flushing usage events
+[0m17:19:40.899483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106625850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107749f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1077900d0>]}
+
+
+============================== 17:19:40.902024 | a2f512db-e080-4f6a-af80-286b94b26334 ==============================
+[0m17:19:40.902024 [info ] [MainThread]: Running with dbt=1.5.1
+[0m17:19:40.902332 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/jessicacarvalho/.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/jessicacarvalho/repositories/pessoal/fivetran_demo_1/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m17:19:40.939230 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "fivetran_demo", target "dev" invalid: ['dbname'] is not of type 'string'
+[0m17:19:40.939635 [debug] [MainThread]: Command `dbt run` failed at 17:19:40.939570 after 0.06 seconds
+[0m17:19:40.939809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x106625850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a79130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107a79220>]}
+[0m17:19:40.939998 [debug] [MainThread]: Flushing usage events
